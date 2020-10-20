@@ -1,5 +1,5 @@
-@import "Partials/variables";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import "Partials/_variables.scss";
+@import "Partials/_header.scss";
+@import "Partials/_common.scss";
 
-body {
-    background-color: $mainColor;
-}

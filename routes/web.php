@@ -24,3 +24,7 @@ Route::get('/prodotti', function () {
 Route::get('/news', function () {
     return view('pages.news');
 });
+
+Route::get('/header', function () {
+    return view('partials.header');
+});
