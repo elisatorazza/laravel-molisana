@@ -13,15 +13,19 @@
     justify-content: center;
     list-style: none;
 
-    a {
+    li {
+        padding: 15px;
+
+        a {
         text-decoration: none;
         color: #000;
         font-weight: bold;
         font-size: 22px;
         padding: 15px;
 
-        &.active {
-            background-color: $mainColor;
-        }
+            &.active {
+                background-color: $mainColor;
+            }
+        }   
     }
 }

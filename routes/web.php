@@ -25,6 +25,6 @@ Route::get('/news', function () {
     return view('pages.news');
 });
 
-Route::get('/header', function () {
-    return view('partials.header');
+Route::get('/footer', function () {
+    return view('partials.footer');
 });

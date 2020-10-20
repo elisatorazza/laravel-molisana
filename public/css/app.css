@@ -16,7 +16,11 @@
   list-style: none;
 }
 
-.main-nav-list a {
+.main-nav-list li {
+  padding: 15px;
+}
+
+.main-nav-list li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -24,7 +28,7 @@
   padding: 15px;
 }
 
-.main-nav-list a.active {
+.main-nav-list li a.active {
   background-color: #B3E5FC;
 }
 
@@ -36,5 +40,82 @@
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  background-image: url("/img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  color: #808080;
+  font-size: 16px;
+}
+
+footer div {
+  width: 30%;
+  padding-right: 30px;
+}
+
+footer div p {
+  padding-bottom: 5px;
+}
+
+footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding-bottom: 100px;
+}
+
+footer nav ul {
+  width: 50%;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+footer nav ul li {
+  padding: 5px;
+}
+
+footer nav ul li:first-child {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.pasta-list {
+  background-image: url("/img/fondo-pag-speciali.jpg");
+}
+
+.pasta-list h2 {
+  color: #002d75;
+  padding: 15px 0;
+  font-size: 24px;
+}
+
+.pasta-list h2 .tipo {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pasta-list h2 .tipo li {
+  width: 30%;
+}
+
+.pasta-list h2 .tipo li .img-responsive {
+  width: 100px;
+  height: auto;
 }
 

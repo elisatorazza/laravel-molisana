@@ -1,0 +1,24 @@
+.pasta-list {
+    background-image: url('/img/fondo-pag-speciali.jpg');
+
+    h2 {
+        color: $titleColor;
+        padding: 15px 0;
+        font-size: 24px;
+
+    .tipo {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+            li {
+                width: 30%;
+
+                .img-responsive {
+                    width: 100px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

@@ -24,29 +24,37 @@ foreach ($data as $pasta) {
 @endsection
 
 @section('mainContent')
-    <ul>
-        <h2>LUNGA</h2>
-        @foreach ($lunga as $tipo)
-            <li>
-            <img src="{{$tipo["src"]}}" alt="">
-            </li>
-        @endforeach      
-    </ul>
-    <ul>
-        <h2>CORTA</h2>
-        @foreach ($corta as $tipo)
-            <li>
-            <img src="{{$tipo["src"]}}" alt="">
-            </li>
-        @endforeach      
-    </ul>
-    <ul>
-        <h2>CORTISSIMA</h2>
-        @foreach ($cortissima as $tipo)
-            <li>
-            <img src="{{$tipo["src"]}}" alt="">
-            </li>
-        @endforeach      
-    </ul>
+<section class="pasta-list">
+    <div class="container">
+        <h2>LE LUNGHE</h2>
+        <ul class="tipo">
+            @foreach ($lunga as $tipo)
+                <li>
+                    <div class="img-responsive">
+                        <img src="{{$tipo["src"]}}" alt="">
+                    </div>
+                </li>
+            @endforeach      
+        </ul>
+        <h2>LE CORTE</h2>
+
+        <ul class="tipo">
+            @foreach ($corta as $tipo)
+                <li>
+                <img src="{{$tipo["src"]}}" alt="">
+                </li>
+            @endforeach      
+        </ul>
+        <h2>LE CORTISSIME</h2>
+
+        <ul class="tipo">
+            @foreach ($cortissima as $tipo)
+                <li>
+                <img src="{{$tipo["src"]}}" alt="">
+                </li>
+            @endforeach      
+        </ul>
+    </div>
+</section>
 @endsection
 
