@@ -15,17 +15,17 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        // padding:
 
             li {
                 width: 30%;
                 background-color: blue;
                 margin: 5px;
+                position: relative;
+                overflow: hidden;
 
                 .img-responsive {
                 width: 100%;
                 height: 100%;
-                
 
                     img {
                         max-width: 100%;
@@ -33,6 +33,52 @@
                         display:block;
                     }
                 }
+
+                .overlay {
+                    background-color: rgba(74,102,128,0.6);
+                    width: 90%;
+                    height: 90%;
+                    text-align: center;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    transform: translate(5%, 5%);
+                    display: none;
+                    
+                    .small-container {
+                        width: 40%;
+                        height: 100%;
+                        display: flex;
+                        margin: auto;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+
+                        a {
+                            text-transform: uppercase;
+                            color: #fff;
+                            text-decoration: none;
+                            width: 100%;
+                        }
+
+                        div.overlay-img {
+                            width: 20px;
+                            color: #fff;
+
+                            img {
+                                color: #fff;
+                            }
+                        }
+
+                    }
+                }
+            }
+            li:hover .overlay {
+                display: block;
+            }
+            li:hover img {
+                transform: scale(1.5, 1.5);
+                transition: .5s;
             }
         }
     

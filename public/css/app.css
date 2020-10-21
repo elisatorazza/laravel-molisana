@@ -118,6 +118,8 @@ footer nav ul a {
   width: 30%;
   background-color: blue;
   margin: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .pasta-list ul li .img-responsive {
@@ -129,5 +131,52 @@ footer nav ul a {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.pasta-list ul li .overlay {
+  background-color: rgba(74, 102, 128, 0.6);
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(5%, 5%);
+  display: none;
+}
+
+.pasta-list ul li .overlay .small-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pasta-list ul li .overlay .small-container a {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+}
+
+.pasta-list ul li .overlay .small-container div.overlay-img {
+  width: 20px;
+  color: #fff;
+}
+
+.pasta-list ul li .overlay .small-container div.overlay-img img {
+  color: #fff;
+}
+
+.pasta-list ul li:hover .overlay {
+  display: block;
+}
+
+.pasta-list ul li:hover img {
+  transform: scale(1.5, 1.5);
+  transition: 0.5s;
 }
 

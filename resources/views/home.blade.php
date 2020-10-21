@@ -33,6 +33,14 @@ foreach ($data as $pasta) {
                     <div class="img-responsive">
                         <img src="{{$tipo["src"]}}" alt="">
                     </div>
+                    <div class="overlay">
+                        <div class="small-container">
+                            <a href="#">{{$tipo["titolo"]}}</a>
+                            <div class="overlay-img">
+                                <img src="{{asset('img/icon.svg')}}" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </li>
             @endforeach      
         </ul>
@@ -42,7 +50,7 @@ foreach ($data as $pasta) {
             @foreach ($corta as $tipo)
                 <li>
                     <div class="img-responsive">
-                    <img src="{{$tipo["src"]}}" alt="">
+                        <img src="{{$tipo["src"]}}" alt="">
                     </div>
                 </li>
             @endforeach      
@@ -53,7 +61,7 @@ foreach ($data as $pasta) {
             @foreach ($cortissima as $tipo)
                 <li>
                     <div class="img-responsive">
-                    <img src="{{$tipo["src"]}}" alt="">
+                        <img src="{{$tipo["src"]}}" alt="">
                      </div>
                 </li>
             @endforeach      
