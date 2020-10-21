@@ -4,9 +4,9 @@
     </div>
     <nav class= "main-nav">
         <ul class="main-nav-list">
-            <li><a href="{{asset('home')}}">Home</a></li>
-            <li><a class="active" href="{{asset('pages/prodotti')}}">Prodotti</a></li>
-            <li><a href="{{asset('pages/news')}}">News</a></li>
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a class="active" href="{{route('products')}}">Prodotti</a></li>
+            <li><a href="{{route('news')}}">News</a></li>
         </ul>
     </nav>
 </header>
