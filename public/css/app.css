@@ -64,7 +64,7 @@ footer div {
 }
 
 footer div p {
-  padding-bottom: 5px;
+  padding-bottom: 30px;
 }
 
 footer nav {
@@ -98,24 +98,36 @@ footer nav ul a {
   background-image: url("/img/fondo-pag-speciali.jpg");
 }
 
+.pasta-list .container {
+  padding: 50px;
+}
+
 .pasta-list h2 {
   color: #002d75;
   padding: 15px 0;
   font-size: 24px;
 }
 
-.pasta-list h2 .tipo {
+.pasta-list ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-.pasta-list h2 .tipo li {
+.pasta-list ul li {
   width: 30%;
+  background-color: blue;
+  margin: 5px;
 }
 
-.pasta-list h2 .tipo li .img-responsive {
-  width: 100px;
+.pasta-list ul li .img-responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.pasta-list ul li .img-responsive img {
+  max-width: 100%;
   height: auto;
+  display: block;
 }
 

@@ -41,7 +41,9 @@ foreach ($data as $pasta) {
         <ul class="tipo">
             @foreach ($corta as $tipo)
                 <li>
-                <img src="{{$tipo["src"]}}" alt="">
+                    <div class="img-responsive">
+                    <img src="{{$tipo["src"]}}" alt="">
+                    </div>
                 </li>
             @endforeach      
         </ul>
@@ -50,7 +52,9 @@ foreach ($data as $pasta) {
         <ul class="tipo">
             @foreach ($cortissima as $tipo)
                 <li>
-                <img src="{{$tipo["src"]}}" alt="">
+                    <div class="img-responsive">
+                    <img src="{{$tipo["src"]}}" alt="">
+                     </div>
                 </li>
             @endforeach      
         </ul>
