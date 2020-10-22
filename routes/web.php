@@ -15,10 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
+
 })->name('home');
 
 Route::get('/prodotti', function () {
-    return view('pages.prodotti');
+    
+    $data = config('db_pasta');
+
+    $paste = [];
+
+    foreach ($data as $key => $value) {
+        $value["id"] = $key;
+        $paste[$value["tipo"]][]=$value;
+    }
+
+    return view('pages.prodotti',  ["db" => $paste]);
+    
 })->name('products');
 
 Route::get('/news', function () {

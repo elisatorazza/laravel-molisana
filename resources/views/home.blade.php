@@ -3,6 +3,7 @@
 @php
 
 $data = config('db_pasta');
+
  
 $lunga = [];
 $corta = [];
