@@ -28,10 +28,15 @@ Route::get('/prodotti', function () {
         $value["id"] = $key;
         $paste[$value["tipo"]][]=$value;
     }
-
     return view('pages.prodotti',  ["db" => $paste]);
     
 })->name('products');
+
+Route::get('/prodotti/{id}', function($id) {
+    $data = config("db_pasta.$id");
+
+    return view('pages.dettaglio_prodotto', ["prodotto" => $data]);
+})->name('product-details');
 
 Route::get('/news', function () {
     return view('pages.news');
